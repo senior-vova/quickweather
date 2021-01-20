@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/quickweather/static/css/main.ca991f4a.chunk.css",
-    "main.js": "/quickweather/static/js/main.86983fe2.chunk.js",
-    "main.js.map": "/quickweather/static/js/main.86983fe2.chunk.js.map",
+    "main.css": "/quickweather/static/css/main.06355c53.chunk.css",
+    "main.js": "/quickweather/static/js/main.549504b8.chunk.js",
+    "main.js.map": "/quickweather/static/js/main.549504b8.chunk.js.map",
     "runtime-main.js": "/quickweather/static/js/runtime-main.af3521d1.js",
     "runtime-main.js.map": "/quickweather/static/js/runtime-main.af3521d1.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/quickweather/static/css/2.ae9f1eb3.chunk.css",
-    "static/js/2.aa3612b4.chunk.js": "/quickweather/static/js/2.aa3612b4.chunk.js",
-    "static/js/2.aa3612b4.chunk.js.map": "/quickweather/static/js/2.aa3612b4.chunk.js.map",
+    "static/js/2.a1f6cd37.chunk.js": "/quickweather/static/js/2.a1f6cd37.chunk.js",
+    "static/js/2.a1f6cd37.chunk.js.map": "/quickweather/static/js/2.a1f6cd37.chunk.js.map",
     "static/js/3.c4f3fe2f.chunk.js": "/quickweather/static/js/3.c4f3fe2f.chunk.js",
     "static/js/3.c4f3fe2f.chunk.js.map": "/quickweather/static/js/3.c4f3fe2f.chunk.js.map",
     "index.html": "/quickweather/index.html",
     "static/css/2.ae9f1eb3.chunk.css.map": "/quickweather/static/css/2.ae9f1eb3.chunk.css.map",
-    "static/css/main.ca991f4a.chunk.css.map": "/quickweather/static/css/main.ca991f4a.chunk.css.map",
-    "static/js/2.aa3612b4.chunk.js.LICENSE.txt": "/quickweather/static/js/2.aa3612b4.chunk.js.LICENSE.txt",
+    "static/css/main.06355c53.chunk.css.map": "/quickweather/static/css/main.06355c53.chunk.css.map",
+    "static/js/2.a1f6cd37.chunk.js.LICENSE.txt": "/quickweather/static/js/2.a1f6cd37.chunk.js.LICENSE.txt",
     "static/media/ClearSky.613bda1e.gif": "/quickweather/static/media/ClearSky.613bda1e.gif",
     "static/media/Cloudy.cf326fcc.gif": "/quickweather/static/media/Cloudy.cf326fcc.gif",
     "static/media/Fog.1c17f57d.gif": "/quickweather/static/media/Fog.1c17f57d.gif",
@@ -29,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.af3521d1.js",
     "static/css/2.ae9f1eb3.chunk.css",
-    "static/js/2.aa3612b4.chunk.js",
-    "static/css/main.ca991f4a.chunk.css",
-    "static/js/main.86983fe2.chunk.js"
+    "static/js/2.a1f6cd37.chunk.js",
+    "static/css/main.06355c53.chunk.css",
+    "static/js/main.549504b8.chunk.js"
   ]
 }
