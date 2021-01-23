@@ -1,10 +1,8 @@
 import {applyMiddleware, combineReducers, compose, createStore} from "redux";
 import thunkMiddleware from "redux-thunk";
-import {reducer as formReducer} from "redux-form";
 import {weatherReducer} from "./weather.reducer";
 
 let reducers = combineReducers({
-    form: formReducer,
     weather: weatherReducer,
 });
 

@@ -1,18 +1,31 @@
 import React, {FC} from "react";
-import {Field, reduxForm} from "redux-form";
-import {Form, Button} from "react-bootstrap";
+import {Formik, Form, Field} from "formik";
+import {Button} from "react-bootstrap";
 
-const Input: FC = (props: any) => <Form.Control type={"text"} {...props} {...props.input} />;
+type Props = {
+    submitForm: (cityName: string) => void
+}
+const SearchForm: FC<Props> = (props: Props) => {
+    const submitForm = (values: any, actions: any) => {
+        if (!values.cityName) actions.setSubmitting(false);
+        props.submitForm(values.cityName);
+        actions.setSubmitting(false);
+    };
+    return <>
+        <Formik initialValues={{cityName: ''}} onSubmit={submitForm}>
+            {({isSubmitting}) => (
+                <Form className={"mt-3 d-flex"}>
+                    <Field
+                        name="cityName"
+                        type={'text'}
+                        className={"form-control text-primary"}
+                        placeholder={"City Name"}
+                    />
+                    <Button className={"ml-1 "} type={"submit"} disabled={isSubmitting}>GO</Button>
+                </Form>
+            )}
+        </Formik>
+    </>
+};
 
-const SearchForm: FC = (props: any) => <Form className={"mt-3 d-flex"} onSubmit={props.handleSubmit}>
-    <Field
-        name={"cityName"}
-        type={"text"}
-        placeholder={"City Name"}
-        component={Input}
-        className={"text-primary"}
-    />
-    <Button className={"ml-1 "} type={"submit"}>GO</Button>
-</Form>;
-
-export default reduxForm({form: 'search'})(SearchForm);
+export default SearchForm;

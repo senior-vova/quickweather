@@ -39,9 +39,8 @@ const Main: FC = () => {
         //@ts-ignore
         setBgGif(GIFs[nameLC][index]);
     };
-    const SFSubmit = (formData: any) => {
-        if (!formData.cityName) return null;
-        dispatch(SetWeather(formData.cityName));
+    const SFSubmit = (cityName: string) => {
+        dispatch(SetWeather(cityName));
     };
 
     return !initialized
@@ -56,7 +55,7 @@ const Main: FC = () => {
             <div className={'container content d-flex flex-column justify-content-center align-items-center'}>
                 <h1 className={"text-primary"}>Quick Weather <i>Demo(ver 0.1)</i></h1>
                 <h3 className={"text-primary"}>Find out the weather of your city quickly</h3>
-                <SearchForm onSubmit={SFSubmit}/>
+                <SearchForm submitForm={SFSubmit}/>
                 {weather
                     ? <div className={"city d-flex flex-column justify-content-center align-items-center mt-3"}>
                         <h1 className={"text-primary"}>{weather.city}/{weather.country}</h1>
