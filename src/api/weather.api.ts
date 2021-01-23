@@ -16,5 +16,12 @@ export const API = {
         } catch (e) {
             return e;
         }
+    },
+    GetWeatherByPos2: async (lat: number, lon: number) => {
+        try {
+            return await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&appid=${apiKey}`);
+        } catch (e) {
+            return e;
+        }
     }
 };

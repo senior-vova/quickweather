@@ -1,5 +1,6 @@
 import {AppStateType} from "./store";
 
-export const getWeatherSelector = (state: AppStateType) => state.weather;
 export const getWeather = (state: AppStateType) => state.weather.weather;
+export const getWeatherDays = (state: AppStateType) => state.weather.weatherDays;
 export const getError = (state: AppStateType) => state.weather.error;
+export const getErrorDays = (state: AppStateType) => state.weather.errorDays;

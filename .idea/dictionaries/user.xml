@@ -2,7 +2,9 @@
   <dictionary name="user">
     <words>
       <w>appid</w>
+      <w>atdgif</w>
       <w>axios</w>
+      <w>bycity</w>
       <w>cityname</w>
       <w>formik</w>
       <w>gifs</w>
