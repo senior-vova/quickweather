@@ -15,15 +15,9 @@ export const Home: FC<{}> = () => {
     const [ATDGIF, setATDGif] = useState<string>("");
     useEffect(() => {
         if (weatherDays) {
-            if (weatherDays.today) {
-                setTodayGif(SetBG(weatherDays.today.name));
-            }
-            if (weatherDays.tomorrow) {
-                setTomorrowGif(SetBG(weatherDays.today.name));
-            }
-            if (weatherDays.atd) {
-                setATDGif(SetBG(weatherDays.atd.name));
-            }
+            setTodayGif(SetBG(weatherDays.today.name));
+            setTomorrowGif(SetBG(weatherDays.today.name));
+            setATDGif(SetBG(weatherDays.atd.name));
             setIndex(0);
         }
         //eslint-disable-next-line
